@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*- 
-# @Time : 2021/2/4 16:11 
+# @Time : 2021/2/4 18:29 
 # @Author : Luciya 
-# @File : test_calc_case.py
+# @File : test_calc_case1.py
+
 import allure
 import pytest
 import yaml
@@ -67,7 +68,6 @@ def get_div_datas(request):
     yield data
     print("结束除法计算")
 
-
 # 测试计算器类
 @allure.feature("测试计算器类")
 class TestCalc:
@@ -106,7 +106,6 @@ class TestCalc:
 
 
     @allure.story("加法测试案例")
-
     def test_sub(self, get_calc, get_sub_datas):
         """
         get_calc实例化计算器类
