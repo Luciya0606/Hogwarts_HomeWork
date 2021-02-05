@@ -1,0 +1,159 @@
+{
+  "uid" : "80458479dae0b390",
+  "name" : "test_mul[float]",
+  "fullName" : "test_calc_case.TestCalc#test_mul",
+  "historyId" : "6c7d4664cdbda1c3c8399e8ead2c60b8",
+  "time" : {
+    "start" : 1612516764524,
+    "stop" : 1612516764524,
+    "duration" : 0
+  },
+  "description" : "\n        get_calc实例化计算器类\n        get_mul_datas:获取测试数据\n        ",
+  "descriptionHtml" : "<pre><code>    get_calc实例化计算器类\n    get_mul_datas:获取测试数据\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_mul_datas",
+    "time" : {
+      "start" : 1612516764523,
+      "stop" : 1612516764523,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1612516764235,
+      "stop" : 1612516764236,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        get_calc实例化计算器类\n        get_mul_datas:获取测试数据\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "计算两个数的积",
+      "time" : {
+        "start" : 1612516764524,
+        "stop" : 1612516764524,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "3fd1648e2c415847",
+      "name" : "stdout",
+      "source" : "3fd1648e2c415847.txt",
+      "type" : "text/plain",
+      "size" : 96
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "get_mul_datas::0",
+    "time" : {
+      "start" : 1612516764530,
+      "stop" : 1612516764530,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_calc::0",
+    "time" : {
+      "start" : 1612516764602,
+      "stop" : 1612516764602,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "乘法测试案例"
+  }, {
+    "name" : "feature",
+    "value" : "测试计算器类"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=3)"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-DH8SI2H"
+  }, {
+    "name" : "thread",
+    "value" : "32452-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_mul_datas",
+    "value" : "[0.2, 0.2, 0.04]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=3)" ]
+  },
+  "source" : "80458479dae0b390.json",
+  "parameterValues" : [ "[0.2, 0.2, 0.04]" ]
+}

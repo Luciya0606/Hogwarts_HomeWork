@@ -1,0 +1,167 @@
+{
+  "uid" : "74bbe8bf70a4f65a",
+  "name" : "test_div[failed]",
+  "fullName" : "test_calc_case.TestCalc#test_div",
+  "historyId" : "24d802005b79b777f080e42096a4e473",
+  "time" : {
+    "start" : 1612516764593,
+    "stop" : 1612516764593,
+    "duration" : 0
+  },
+  "description" : "\n        get_calc实例化计算器类\n        get_div_datas:获取测试数据\n        ",
+  "descriptionHtml" : "<pre><code>    get_calc实例化计算器类\n    get_div_datas:获取测试数据\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 1.1 == 1",
+  "statusTrace" : "self = <calculator.testcase.test_calc_case.TestCalc object at 0x000001B3853B83D0>, get_calc = <calculator.python_code.calc.Calculator object at 0x000001B385325A00>\nget_div_datas = [2.2, 2, 1]\n\n    @allure.story(\"除法测试案例\")\n    @pytest.mark.run(order=4)\n    # @pytest.mark.fourth\n    def test_div(self, get_calc, get_div_datas,):\n        \"\"\"\n        get_calc实例化计算器类\n        get_div_datas:获取测试数据\n        \"\"\"\n        with allure.step(\"计算两个数的相除结果\"):\n            # 获取yaml文件内参数\n            result = get_calc.div(get_div_datas[0], get_div_datas[1])\n            # 如果相加数为float型 ，保留两位小数\n        if isinstance(result, float):\n            result = round(result, 2)\n            # 结果添加断言\n>       assert result == get_div_datas[2]\nE       assert 1.1 == 1\n\ntest_calc_case.py:47: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_div_datas",
+    "time" : {
+      "start" : 1612516764592,
+      "stop" : 1612516764592,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1612516764235,
+      "stop" : 1612516764236,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        get_calc实例化计算器类\n        get_div_datas:获取测试数据\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 1.1 == 1",
+    "statusTrace" : "self = <calculator.testcase.test_calc_case.TestCalc object at 0x000001B3853B83D0>, get_calc = <calculator.python_code.calc.Calculator object at 0x000001B385325A00>\nget_div_datas = [2.2, 2, 1]\n\n    @allure.story(\"除法测试案例\")\n    @pytest.mark.run(order=4)\n    # @pytest.mark.fourth\n    def test_div(self, get_calc, get_div_datas,):\n        \"\"\"\n        get_calc实例化计算器类\n        get_div_datas:获取测试数据\n        \"\"\"\n        with allure.step(\"计算两个数的相除结果\"):\n            # 获取yaml文件内参数\n            result = get_calc.div(get_div_datas[0], get_div_datas[1])\n            # 如果相加数为float型 ，保留两位小数\n        if isinstance(result, float):\n            result = round(result, 2)\n            # 结果添加断言\n>       assert result == get_div_datas[2]\nE       assert 1.1 == 1\n\ntest_calc_case.py:47: AssertionError",
+    "steps" : [ {
+      "name" : "计算两个数的相除结果",
+      "time" : {
+        "start" : 1612516764593,
+        "stop" : 1612516764593,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "f2608023b23ee32f",
+      "name" : "stdout",
+      "source" : "f2608023b23ee32f.txt",
+      "type" : "text/plain",
+      "size" : 177
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "get_div_datas::0",
+    "time" : {
+      "start" : 1612516764599,
+      "stop" : 1612516764599,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_calc::0",
+    "time" : {
+      "start" : 1612516764602,
+      "stop" : 1612516764602,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试计算器类"
+  }, {
+    "name" : "story",
+    "value" : "除法测试案例"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=4)"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-DH8SI2H"
+  }, {
+    "name" : "thread",
+    "value" : "32452-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_div_datas",
+    "value" : "[2.2, 2, 1]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=4)" ]
+  },
+  "source" : "74bbe8bf70a4f65a.json",
+  "parameterValues" : [ "[2.2, 2, 1]" ]
+}
