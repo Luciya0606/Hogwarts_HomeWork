@@ -5,7 +5,9 @@
 import pytest
 import yaml
 
-from calculator.python_code.calc import Calculator
+# from calculator.python_code.calc import Calculator
+from Pyhomework.calculator.python_code.calc import Calculator
+
 
 @pytest.fixture(scope="module")
 def get_calc():
