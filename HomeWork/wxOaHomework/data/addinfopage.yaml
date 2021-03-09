@@ -1,0 +1,13 @@
+add_info:
+  - locator: //*[@text='姓名']/../..//*[@resourece-id='com.tencent.wework:id/au0']
+    action: send
+    value: "{value}"
+  - locator: //*[@text='手机号']
+    action: send
+    value: "{value}"
+  - locator: //*[@text='邮箱']/../..//*[@resourece-id='com.tencent.wework:id/au0']
+    action: send
+    value: "{value}"
+  - locator: //*[@text='保存']
+    action: click
+

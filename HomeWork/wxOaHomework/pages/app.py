@@ -1,32 +1,34 @@
-# -*- coding: utf-8 -*-
-# @Time : 2021/3/6 14:43 
+# -*- coding: utf-8 -*- 
+# @Time : 2021/3/8 17:56 
 # @Author : Luciya 
 # @File : app.py
 from appium import webdriver
-from Pyhomework.wxOaHomework.pages.information import Information
+
+from HomeWork.wxOaHomework.pages.information_page import InformationPage
 
 
 class App:
     def __init__(self):
+        # 初始化driver
         self.driver = None
         self.start()
 
     def start(self):
-            caps = {}
-            caps["platformName"] = "Android",
-            caps["deviceName"] = "127.0.0.1:7555",
-            caps["appPackage"] = "com.tencent.wework",
-            caps["appActivity"] = ".launch.LaunchSplashActivity",
-            caps["autoGrantPermissions"] = True
-            # 不清空缓存启动app
-            caps["noReset"] = "true"
-            # 设置等待页面空闲状态时间0s,可用来处理动态页面
-            caps['settings[waitForIdleTimeout]'] = 0
-            print(caps)
-            self.driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", caps)
-            self.driver.implicitly_wait(10)
+        caps = {
+            "platformName": "Android",
+            "deviceName": "127.0.0.1:7555",
+            "appPackage": "com.tencent.wework",
+            "appActivity": ".launch.LaunchSplashActivity",
+            "noReset": True,
+            "dontStopAppReset": True,
+            "skipDeviceInitialization": True,
+            "unicodeKeyBoard": True,
+            "resetKeyBoard": True,
+            "settings[waitForIdleTimeout]": 0
+        }
+        self.driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", caps)
+        self.driver.implicitly_wait(5)
 
-
-    def goto_information(self):
-        # 传入driver以便于复用
-        return Information(self.driver)
+    # 跳转到主页面
+    def goto_main(self):
+        return InformationPage(self.driver)

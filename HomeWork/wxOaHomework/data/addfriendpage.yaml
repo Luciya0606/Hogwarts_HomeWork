@@ -1,0 +1,3 @@
+add_friend:
+  - locator: //*[@resource-id='com.tencent.wework:id/h2h']
+    action: click
