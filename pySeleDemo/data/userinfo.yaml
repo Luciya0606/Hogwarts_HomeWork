@@ -1,0 +1,9 @@
+- by: name
+  locator: userName
+  action: send
+  value: "{value}"
+
+- by: name
+  locator: phone
+  action: send
+  value: "{value}"

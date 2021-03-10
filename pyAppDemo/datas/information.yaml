@@ -1,0 +1,2 @@
+- locator: //*[@text='工作台']
+  action: click
