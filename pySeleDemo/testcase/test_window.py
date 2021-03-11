@@ -12,11 +12,12 @@ class TestWindow(PageBaidu):
         self.goto_login()
         print("点击成功")
 
-    @pytest.mark.skip
+
     def test_goto_switch(self):
         self.goto_switch_frame()
         print("切换成功")
 
+    @pytest.mark.skip
     def test_js(self):
         self.goto_js_scroll()
         print("定位成功")

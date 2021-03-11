@@ -15,8 +15,8 @@ class TestAddMember:
         self.mainPage.quit()
 
     def test_add_member(self):
-        username = "小小2"
-        account = "xiao02"
+        username = "小小1"
+        account = "xiao01"
         phone = "13589652631"
         page = self.mainPage.goto_member()
         page.add_member(username, account, phone)

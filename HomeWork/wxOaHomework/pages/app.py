@@ -20,7 +20,7 @@ class App:
             "appPackage": "com.tencent.wework",
             "appActivity": ".launch.LaunchSplashActivity",
             "noReset": True,
-            "dontStopAppReset": True,
+            "dontStopAppOnReset": True,
             "skipDeviceInitialization": True,
             "unicodeKeyBoard": True,
             "resetKeyBoard": True,

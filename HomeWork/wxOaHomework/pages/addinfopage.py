@@ -6,8 +6,12 @@ from HomeWork.wxOaHomework.pages.basepage import BasePage
 
 
 class AddInfoPage(BasePage):
-    def add_info(self, send_value):
-        self.set_params("../data/addinfopage.yaml", "add_info", send_value)
-        return self.find("//*[class='android.widget.TextView']").text
+    def add_info(self, username, phone, mail, address):
+        self._params["username"] = username
+        self._params["phone"] = phone
+        self._params["mail"] = mail
+        self._params["address"] = address
+        self.set_params("../data/addinfopage.yaml", "add_info")
+        assert "添加成功"
 
 

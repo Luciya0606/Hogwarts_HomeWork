@@ -12,6 +12,9 @@ class TestAddFriend:
     def setup(self):
         self.app = App()
 
-    @pytest.mark.parametrize(["send_value"], yaml.safe_load(open("../data/testdata.yaml", "r", encoding="utf-8")))
-    def test_add_friend(self, send_value):
-        self.app.goto_main().goto_mail_page().goto_add_friend().add_friend().add_info(send_value)
+    def test_add_friend(self):
+        username = "张张4"
+        phone = "18254125631"
+        mail = "zhang4@qq.com"
+        address = "腾讯大厦101"
+        self.app.goto_main().goto_mail_page().goto_add_friend().add_friend().add_info(username, phone, mail, address)

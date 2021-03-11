@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*- 
 # @Time : 2021/3/8 14:16 
 # @Author : Luciya 
-# @File : basepage.py
+# @File : base_page.py
 from appium.webdriver.common.mobileby import MobileBy
 from appium.webdriver.webdriver import WebDriver
 

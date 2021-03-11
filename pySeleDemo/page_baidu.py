@@ -26,16 +26,16 @@ class PageBaidu(Base):
         print(self.driver.current_window_handle)
         self.driver.find_element_by_link_text("立即注册").click()
         print(self.driver.current_window_handle)
-        widows = self.driver.window_handles
+        windows = self.driver.window_handles
         # 无法直接进行定位 需要切换窗口
-        self.driver.switch_to.window(widows[-1])
-
+        self.driver.switch_to.window(windows[-1])
+        # self.driver.switch_to.window(self.driver.window_handles[-1])
         self.driver.find_element_by_id("TANGRAM__PSP_4__userName").send_keys("luciya")
         sleep(3)
         self.driver.find_element_by_id("TANGRAM__PSP_4__phone").send_keys("17688843100")
         sleep(3)
         # 打印完切换回之前的窗口
-        self.driver.switch_to.window(widows[0])
+        self.driver.switch_to.window(windows[0])
         self.driver.find_element_by_id("TANGRAM__PSP_11__footerULoginBtn").click()
         locator_username = self.driver.find_element(By.ID, "TANGRAM__PSP_11__userName").send_keys("17688843100")
         sleep(3)
