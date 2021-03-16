@@ -1,3 +1,8 @@
 goto_add_friend:
-  - text: 添加成员
+  - text: "{text}"
     action: swipe
+
+goto_detail_info:
+  - text: "{text}"
+    action: swipe
+

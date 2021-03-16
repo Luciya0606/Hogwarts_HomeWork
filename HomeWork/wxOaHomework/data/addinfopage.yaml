@@ -1,21 +1,38 @@
 add_info:
-  - locator: //*[@resource-id='com.tencent.wework:id/au0' and @text='必填']
+  - by: xpath
+    locator: //*[@resource-id='com.tencent.wework:id/au0' and @text='必填']
     action: send
-    value: "{username}"
-  - locator: //*[@text= '手机号']
+    text: "{username}"
+
+  - by: xpath
+    locator: //*[@text= '手机号']
     action: send
-    value: "{phone}"
-  - locator: //*[@resource-id='com.tencent.wework:id/au0' and @text='选填']
+    text: "{phone}"
+
+  - by: xpath
+    locator: //*[@resource-id='com.tencent.wework:id/au0' and @text='选填']
     action: send
-    value: "{mail}"
-  - locator: //*[@resource-id='com.tencent.wework:id/aut' and @text='选填']
-    action: click
-  - locator : //*[@resource-id='com.tencent.wework:id/gz' and @text ='请输入公司地址，例如“腾讯大厦”']
-    action : send
-    value: "{address}"
-  - locator : //*[@resource-id = 'com.tencent.wework:id/gur' and @text='确定']
-    action : click
-  - locator: //*[@text= '保存']
+    text: "{mail}"
+
+  - by: xpath
+    locator: //*[@resource-id='com.tencent.wework:id/aut' and @text='选填']
     action: click
 
+  - by: xpath
+    locator : //*[@resource-id='com.tencent.wework:id/gz' and @text ='请输入公司地址，例如“腾讯大厦”']
+    action : send
+    text: "{address}"
+
+  - by: xpath
+    locator : //*[@resource-id = 'com.tencent.wework:id/gur' and @text='确定']
+    action : click
+
+  - by: xpath
+    locator: //*[@text= '保存']
+    action: click
+
+verify_ok:
+  - by: xpath
+    locator: //*[@text= '添加成功']
+    action: find
 

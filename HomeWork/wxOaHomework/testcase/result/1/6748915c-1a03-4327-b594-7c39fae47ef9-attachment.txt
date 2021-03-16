@@ -1,0 +1,14 @@
+[32mINFO    [0m HomeWork.wxOaHomework.conftest:basepage.py:36 find: by= xpath, locator= //*[@text='日程']
+[32mINFO    [0m HomeWork.wxOaHomework.conftest:basepage.py:36 find: by= xpath, locator= //*[@text='通讯录']
+[1m[31mERROR   [0m HomeWork.wxOaHomework.conftest:basepage.py:43 未找到元素
+[32mINFO    [0m HomeWork.wxOaHomework.conftest:basepage.py:36 find: by= xpath, locator= //*[@text='通讯录']
+[32mINFO    [0m HomeWork.wxOaHomework.conftest:basepage.py:36 find: by= xpath, locator= //*[@resource-id='com.tencent.wework:id/h2h']
+[32mINFO    [0m HomeWork.wxOaHomework.conftest:basepage.py:36 find: by= xpath, locator= //*[@resource-id='com.tencent.wework:id/au0' and @text='必填']
+[32mINFO    [0m HomeWork.wxOaHomework.conftest:basepage.py:36 find: by= xpath, locator= //*[@text= '手机号']
+[32mINFO    [0m HomeWork.wxOaHomework.conftest:basepage.py:36 find: by= xpath, locator= //*[@resource-id='com.tencent.wework:id/au0' and @text='选填']
+[32mINFO    [0m HomeWork.wxOaHomework.conftest:basepage.py:36 find: by= xpath, locator= //*[@resource-id='com.tencent.wework:id/aut' and @text='选填']
+[32mINFO    [0m HomeWork.wxOaHomework.conftest:basepage.py:36 find: by= xpath, locator= //*[@resource-id='com.tencent.wework:id/gz' and @text ='请输入公司地址，例如“腾讯大厦”']
+[32mINFO    [0m HomeWork.wxOaHomework.conftest:basepage.py:36 find: by= xpath, locator= //*[@resource-id = 'com.tencent.wework:id/gur' and @text='确定']
+[32mINFO    [0m HomeWork.wxOaHomework.conftest:basepage.py:36 find: by= xpath, locator= //*[@text= '保存']
+[32mINFO    [0m HomeWork.wxOaHomework.conftest:basepage.py:36 find: by= xpath, locator= //*[@text= '添加成功']
+[1m[31mERROR   [0m HomeWork.wxOaHomework.conftest:basepage.py:43 未找到元素

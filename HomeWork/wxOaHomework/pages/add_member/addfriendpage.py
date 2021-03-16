@@ -2,10 +2,10 @@
 # @Time : 2021/3/8 17:49 
 # @Author : Luciya 
 # @File : addfriendpage.py
-from appium.webdriver.common.mobileby import MobileBy
 
 from HomeWork.wxOaHomework.pages.basepage import BasePage
-from HomeWork.wxOaHomework.pages.addinfopage import AddInfoPage
+from HomeWork.wxOaHomework.pages.add_member.addinfopage import AddInfoPage
+
 
 class AddFriendPage(BasePage):
     def add_friend(self):

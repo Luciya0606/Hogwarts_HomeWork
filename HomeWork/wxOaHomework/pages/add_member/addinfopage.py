@@ -12,6 +12,9 @@ class AddInfoPage(BasePage):
         self._params["mail"] = mail
         self._params["address"] = address
         self.set_params("../data/addinfopage.yaml", "add_info")
-        assert "添加成功"
+        return self
+
+    def verify_ok(self):
+        self.set_params("../data/addinfopage.yaml", "verify_ok")
 
 

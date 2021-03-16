@@ -1,0 +1,13 @@
+goto_del_friend:
+  - by: xpath
+    locator: //*[@resource-id='com.tencent.wework:id/guk']
+    action: click
+  - by: xpath
+    locator: //*[@text='编辑成员']
+    action: click
+  - by: xpath
+    locator: //*[@text='删除成员']
+    action: click
+  - by: xpath
+    locator: //*[@text='确定']
+    action: click
